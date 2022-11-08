@@ -119,7 +119,7 @@ public class CustomerServiceImpl implements CustomerService {
 			throw new CustomerNotPresent("Customer Not present");
 		}
 		
-		//fining if the item to delete is present
+		//finding if the item to delete is present
 
 		FoodCart cart=c.getCart();
 		if(cart.getItems().size()==0) {
@@ -144,7 +144,7 @@ public class CustomerServiceImpl implements CustomerService {
 	public List<Customer> getCustomerByCity(String city_name) throws NoCustomerPresentInCity {
 		List<Customer> list=repo.getCustomerByCity(city_name);
 		if(list.size()==0) {
-			throw new NoCustomerPresentInCity("No sutomer present");
+			throw new NoCustomerPresentInCity("No customer present");
 		}
 		return list;
 	}
