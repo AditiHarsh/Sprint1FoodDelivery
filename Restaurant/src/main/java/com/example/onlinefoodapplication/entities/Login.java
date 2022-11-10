@@ -1,5 +1,7 @@
 package com.example.onlinefoodapplication.entities;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -19,7 +21,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @EqualsAndHashCode
-public class Login {
+public class Login implements Serializable {
 
 	@Id
 	private int userid;
